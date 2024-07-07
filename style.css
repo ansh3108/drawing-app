@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.toolbar 
+{
+  width: auto;
+  height: 50px;
+  position: fixed;
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: opacity 0.5s;
+  background: linear-gradient(to right, #4568DC, #B06AB3);
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+
+.toolbar img 
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toolbar div,
+.toolbar button,
+.toolbar input
+ {
+  margin: 5px;
+}
+
+.toolbar:hover 
+{
+  cursor: pointer;
+}
+
+button:hover 
+{
+  cursor: pointer;
+}
+
+.color
+ {
+  height: 35px;
+  width: 35px;
+  background-color: blue;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: transform 0.5s;
+}
+
+.color:hover {
+  transform: scale(1.2);
+}
+.color:nth-child(1) {
+  background-color: #000;
+}
+.color:nth-child(2) {
+  background-color: red;
+}
+.color:nth-child(3) {
+  background-color: orange;
+}
+.color:nth-child(4) {
+  background-color: blue;
+}
+.color:nth-child(5) {
+  background-color: purple;
+}
+.color:nth-child(6) {
+  background-color: yellowgreen;
+}
+.color:nth-child(7) {
+  background-color: yellow;
+}
+.color:nth-child(8) {
+  background-color: #fff;
+}
+
+button 
+{
+  border: none;
+  outline: none;
+  padding: 0.6em 1em;
+  border-radius: 3px;
+  background-color: #03bb56;
+  color: #fff;
+  border: 3px solid white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.save 
+{
+  background-color: #0f65d4;
+}
+input[type="color"] {
+  width: 60px;
+  height: 40px;
+}
+#sizeOutputId {
+  color: white;
+  font-weight: bold;
+  font-size: 15pt;
+}
+#sizeInputId {
+  background: linear-gradient(to right, #000428 0%, #004e92 100%);
+  height: 7px;
+  outline: none;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  border-radius: 5px;
+  border: 3px solid white;
+  accent-color: white;
+}
+.emoji {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
