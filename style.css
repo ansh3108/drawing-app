@@ -5,8 +5,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.toolbar 
-{
+.toolbar {
   width: auto;
   height: 50px;
   position: fixed;
@@ -23,36 +22,25 @@
   border: 3px solid white;
 }
 
-.toolbar img 
-{
+
+img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.toolbar div,
-.toolbar button,
-.toolbar input
- {
+.toolbar div, button, input {
   margin: 5px;
 }
-
-.toolbar:hover 
-{
+.toolbar:hover {
   cursor: pointer;
 }
-
-button:hover 
-{
+button:hover {
   cursor: pointer;
 }
-
-.color
- {
+.color {
   height: 35px;
   width: 35px;
-  background-color: blue;
   border-radius: 50%;
   border: 3px solid white;
   transition: transform 0.5s;
@@ -61,6 +49,8 @@ button:hover
 .color:hover {
   transform: scale(1.2);
 }
+
+
 .color:nth-child(1) {
   background-color: #000;
 }
@@ -86,8 +76,8 @@ button:hover
   background-color: #fff;
 }
 
-button 
-{
+
+button {
   border: none;
   outline: none;
   padding: 0.6em 1em;
@@ -99,20 +89,26 @@ button
   font-weight: bold;
 }
 
-.save 
-{
+.download
+ {
   background-color: #0f65d4;
 }
-input[type="color"] {
+
+input[type="color"] 
+{
   width: 60px;
   height: 40px;
 }
-#sizeOutputId {
+
+#brushOutput
+ {
   color: white;
   font-weight: bold;
   font-size: 15pt;
 }
-#sizeInputId {
+
+#brushSize
+ {
   background: linear-gradient(to right, #000428 0%, #004e92 100%);
   height: 7px;
   outline: none;
@@ -122,6 +118,7 @@ input[type="color"] {
   border: 3px solid white;
   accent-color: white;
 }
+
 .emoji {
   font-size: 40px;
   padding-bottom: 10px;
