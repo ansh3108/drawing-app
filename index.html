@@ -2,19 +2,20 @@
 <html lang="en">
 <head>
 
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artistic Canvas 🎨</title>
+    <title>Art Pad</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 
+
 </head>
-
-
 <body>
 
-    <canvas id="canvas"></canvas>
+
+    <canvas id="artboard"></canvas>
     <div class="toolbar">
         <div class="color" data-color="#000"></div>
         <div class="color" data-color="red"></div>
@@ -24,15 +25,14 @@
         <div class="color" data-color="yellowgreen"></div>
         <div class="color" data-color="yellow"></div>
         <div class="color" data-color="#fff"></div>
-        <button class="clear">Clear</button>
-        <button class="save">Save</button>
-        <input type="color" id="favcolor" value="#FFFFFF">
-        <input type="range" name="sizeInputName" id="sizeInputId" value="5" min="1" max="10" oninput="sizeOutputId.value = sizeInputId.value">
-        <output id="sizeOutputId">5</output>
+        <button class="reset">Reset</button>
+        <button class="download">Download</button>
+        <input type="color" id="colorPicker" value="#FFFFFF">
+        <input type="range" id="brushSize" value="5" min="1" max="10" oninput="brushOutput.value = brushSize.value">
+        <output id="brushOutput">5</output>
         <div class="emoji">🎨</div>
     </div>
 
+    
 </body>
-
-
 </html>
